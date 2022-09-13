@@ -1,18 +1,18 @@
-#include <stdio.h>
+#include "main.h"
 /**
-* main - Entry point
+* main - function to print
 *
-* Description: Prints _putchar, followed by a new line
-* Return:zero 
+* Return: 0
 */
 int main(void)
 {
-		char pch[] = "_putchar";
-		int msg;
-		for (msg = 0; msg <= 8; msg++)
+		char putchar[8] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+		unsigned int c;
+		
+		for (c = 0; c < sizeof(putchar); c++)
 		{
-		putchar(pch[msg]);
+		_putchar(putchar[c]);
 		}
-		putchar('\n');
+		_putchar('\n');	
 		return (0);
 }
