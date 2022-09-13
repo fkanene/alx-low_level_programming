@@ -9,13 +9,14 @@
 
 int main(void)
 {
-		char pch[] = "_putchar";
-			int msg;
-
-			for (msg = 0; msg <= 8; msg++)
-			{
-			putchar(pch[msg]);
-			}
-			putchar('\n');
+	putchar('_');
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
+	putchar('\n');
 			return (0);
 }
