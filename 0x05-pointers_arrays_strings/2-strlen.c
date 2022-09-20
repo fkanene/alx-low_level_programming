@@ -4,11 +4,14 @@
 *@s: give me the word
 *Return: gave large
 */
-int _strlen(char *str)
-{
-	_strlen length = 0;
 
-	while (*str++)
-	length++;
-	return (length);
+int _strlen(char *s)
+{
+	int large = 0;
+
+	while (*(s + large) != '\0')
+	{
+	large++;
+	}
+	return (large);
 }
