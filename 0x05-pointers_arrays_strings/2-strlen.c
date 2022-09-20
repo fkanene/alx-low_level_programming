@@ -1,16 +1,14 @@
-#include "mainn.h"
+#include "main.h"
 /**
 *_strlen - Entry point
 *@s: give me the word
 *Return: gave large
 */
-int _strlen(char *s)
+int _strlen(char *str)
 {
-	int big = 0;
+	_strlen length = 0;
 
-	while (*(s + big) != '\0')
-	{
-	big++;
-	}
-	return (big);
+	while (*str++)
+	length++;
+	return (length);
 }
